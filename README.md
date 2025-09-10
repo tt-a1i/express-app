@@ -2,6 +2,12 @@
 
 这是一个使用 Express 应用程序生成器创建的 Express.js 项目。
 
+## Git 配置
+
+本项目已与远程仓库关联：
+- 远程仓库: `git@github.com:tt-a1i/express-app.git`
+- 分支: `main`
+
 ## 项目结构
 
 ```
