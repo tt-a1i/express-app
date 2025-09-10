@@ -62,3 +62,13 @@ pnpm start
 2. Jade 模板引擎已被弃用，建议迁移到 Pug
 3. 可以通过修改 `routes/` 目录下的文件来添加新的路由
 4. 静态资源文件放在 `public/` 目录下
+
+## 中间件学习
+
+本项目包含多个中间件示例，位于 `middleware/` 目录中：
+- `logger.js` - 应用级日志记录中间件
+- `auth.js` - 路由级认证中间件
+- `errorHandler.js` - 错误处理中间件
+- `utils.js` - 实用工具中间件集合
+
+详细说明请查看 [middleware/README.md](middleware/README.md)
