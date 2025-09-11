@@ -1,37 +1,37 @@
 {
-	"name": "express-app",
-	"version": "1.0.0",
-	"description": "Express.js application generated with express-generator",
-	"private": true,
-	"scripts": {
-		"start": "node ./bin/www",
-		"dev": "DEBUG=express:* nodemon ./bin/www",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "biome check .",
-		"lint:fix": "biome check --apply .",
-		"format": "biome format --write ."
-	},
-	"keywords": [
-		"express",
-		"node",
-		"web",
-		"framework"
-	],
-	"author": "Your Name",
-	"license": "MIT",
-	"dependencies": {
-		"cookie-parser": "~1.4.4",
-		"debug": "~2.6.9",
-		"express": "~4.16.1",
-		"http-errors": "~1.6.3",
-		"jade": "~1.11.0",
-		"morgan": "~1.9.1"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^2.2.4",
-		"nodemon": "^2.0.22"
-	},
-	"engines": {
-		"node": ">=12.0.0"
-	}
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "Express.js application generated with express-generator",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "DEBUG=express:* nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "biome check .",
+    "lint:fix": "biome check --apply .",
+    "format": "biome format --write ."
+  },
+  "keywords": [
+    "express",
+    "node",
+    "web",
+    "framework"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.4",
+    "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
 }

@@ -7,10 +7,10 @@ var logger = require("morgan");
 // 引入自定义中间件
 var loggerMiddleware = require("./middleware/logger");
 var {
-	requestTime,
-	responseTime,
-	cors,
-	limitBodySize,
+  requestTime,
+  responseTime,
+  cors,
+  limitBodySize,
 } = require("./middleware/utils");
 var { errorHandler } = require("./middleware/errorHandler");
 
@@ -43,7 +43,7 @@ app.use("/protected", protectedRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
-	next(createError(404));
+  next(createError(404));
 });
 
 // 错误处理中间件（必须放在所有路由之后）
