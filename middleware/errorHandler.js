@@ -1,7 +1,7 @@
 // 错误处理中间件示例
 // 错误处理中间件必须有4个参数：err, req, res, next
 
-function errorHandler(err, req, res, next) {
+function errorHandler(err, _req, res, _next) {
   // 记录错误日志
   console.error("Error occurred:", err.stack);
 

@@ -6,7 +6,7 @@ var auth = require("../middleware/auth");
 var { asyncHandler } = require("../middleware/errorHandler");
 
 /* GET 受保护的资源 */
-router.get("/", auth, (req, res, next) => {
+router.get("/", auth, (req, res, _next) => {
   res.json({
     message: "This is a protected resource",
     user: req.user,
@@ -18,7 +18,7 @@ router.get("/", auth, (req, res, next) => {
 router.get(
   "/profile",
   auth,
-  asyncHandler(async (req, res, next) => {
+  asyncHandler(async (req, res, _next) => {
     // 模拟异步操作
     await new Promise((resolve) => setTimeout(resolve, 100));
 
@@ -35,7 +35,7 @@ router.get(
 );
 
 /* POST 受保护的数据 */
-router.post("/data", auth, (req, res, next) => {
+router.post("/data", auth, (req, res, _next) => {
   const data = req.body;
 
   // 检查请求体

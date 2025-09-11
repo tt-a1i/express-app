@@ -5,7 +5,7 @@ function auth(req, res, next) {
   // 检查请求头中是否包含 authorization 字段
   const authHeader = req.headers.authorization;
 
-  if (authHeader && authHeader.startsWith("Bearer ")) {
+  if (authHeader?.startsWith("Bearer ")) {
     // 提取 token
     const token = authHeader.substring(7);
 

@@ -1,7 +1,7 @@
 // 中间件工具函数
 
 // 请求时间测量中间件
-function requestTime(req, res, next) {
+function requestTime(req, _res, next) {
   req.requestTime = Date.now();
   next();
 }
@@ -43,7 +43,7 @@ function limitBodySize(req, res, next) {
   const MAX_BODY_SIZE = 1024 * 1024; // 1MB
 
   if (req.headers["content-length"]) {
-    const contentLength = parseInt(req.headers["content-length"]);
+    const contentLength = parseInt(req.headers["content-length"], 10);
     if (contentLength > MAX_BODY_SIZE) {
       return res.status(413).json({ error: "Request entity too large" });
     }
